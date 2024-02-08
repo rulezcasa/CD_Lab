@@ -29,7 +29,7 @@ const char* classify_token(const char *token) {
         return "Identifier";
     }
 
-    // Check if the token is a constant (for simplicity, we'll consider integers as constants)
+    // Check if the token is a constant
     int valid_constant = 1;
     for (int i = 0; i < strlen(token); i++) {
         if (!isdigit(token[i])) {
